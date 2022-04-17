@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    //to know how to use sanctum see laravel documentation.
     public function register(Request $request){
         $fields = $request->validate([
             'name' => 'required|string',
